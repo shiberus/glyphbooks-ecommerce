@@ -1,0 +1,47 @@
+.Catalogue {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-left: 125px;
+}
+
+.add {
+  height: 20px;
+  width: 120px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Fondo {
+  background: rgb(252, 237, 211);
+  background: linear-gradient(
+    2deg,
+    rgba(252, 237, 211, 1) 0%,
+    rgba(253, 246, 233, 1) 25%,
+    rgba(250, 250, 250, 1) 100%
+  );
+  height: auto;
+
+  min-height: 55rem;
+  display: flex;
+}
+
+.Orden {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 80%;
+}
+
+.Size {
+  display: flex;
+  flex-direction: raw;
+  max-width: 80%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}

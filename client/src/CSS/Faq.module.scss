@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.html {
+  background: rgb(252, 237, 211);
+  background: linear-gradient(
+    2deg,
+    rgba(252, 237, 211, 1) 0%,
+    rgba(253, 246, 233, 1) 25%,
+    rgba(250, 250, 250, 1) 100%
+  );
+  height: 90vh;
+  display: flex;
+  font-size: 10px;
+  box-sizing: border-box;
+  width: 100%;
+
+  background-color: white;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+
+  padding: 0 1.5rem;
+}
+
+.accordionitem {
+  background-color: #fafafa95;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.accordionlink {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  background-color: #fafafa95;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.accordionlink ion-icon {
+  color: #e7d5ff;
+  padding: 0.5rem;
+}
+
+.accordionlink .ion-icon {
+  display: none;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: transparent;
+  transition: max-height 650ms;
+}
+
+.answer::before {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 90%;
+  background-color: #fca311;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%);
+}
+
+.answer p {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  padding: 2rem;
+}
+
+.accordionitem:target .answer {
+  max-height: 20rem;
+}
+
+.accordionitem:target .accordionlink .ion-icon {
+  display: none;
+}

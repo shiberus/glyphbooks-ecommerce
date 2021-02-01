@@ -1,0 +1,35 @@
+.btns {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  float: right;
+  justify-content: space-between;
+
+  li {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    height: 1.5rem;
+
+    &:hover {
+      border-bottom-color: var(--color-primary);
+    }
+  }
+}
+
+.barra {
+  position: relative;
+  top: 5rem;
+  left: 15rem;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}

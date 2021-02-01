@@ -1,0 +1,14 @@
+.form {
+  border-radius: 24px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input {
+  min-height: 25px;
+  border-radius: 10px;
+  border-color: rgba(255, 189, 66, 0.3);
+}

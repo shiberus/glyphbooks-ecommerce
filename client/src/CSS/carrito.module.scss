@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  position: absolute;
+  width: 500px;
+  top: 5rem;
+  height: 10%;
+  background: rgba(255, 255, 255, 0.2);
+  right: -500px;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  transition: 0.7s;
+  position: fixed;
+}
+
+.sidebarOpen {
+  position: absolute;
+  overflow: auto;
+  z-index: 10;
+  width: 25rem;
+  height: 90%;
+  backdrop-filter: blur(7px);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  transition: 0.4s;
+  right: 0;
+  top: 5rem;
+  position: fixed;
+}
+
+.sidebar ul li {
+  list-style: none;
+  color: var(--color-text);
+  font-size: 20px;
+  padding: 20px 24px;
+}
+
+.sidebarOpen ul li {
+  list-style: none;
+  color: var(--color-text);
+  font-size: 20px;
+  padding: 20px 24px;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--color-primary);
+  background-color: transparent;
+  padding: 0.2rem 0.4rem;
+  border: solid 2px var(--color-primary);
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 1rem;
+  transition-duration: 500ms;
+  display: flex;
+  align-items: center;
+  &:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+    svg {
+      fill: #fafafa;
+    }
+  }
+}
+
+.togglebtn span {
+  width: 45px;
+  height: 4px;
+  color: var(--color-text);
+  display: block;
+  margin-top: 4px;
+}
+
+.total {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.vacio {
+  position: relative;
+  top: 30%;
+  align-self: center;
+  margin: 4.5rem;
+  padding-bottom: 1rem;
+  font-size: 25px;
+  color: var(--color-primary);
+  border-bottom: 0.1rem solid var(--color-primary);
+}

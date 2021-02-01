@@ -1,0 +1,79 @@
+.fondo {
+  background: rgb(252, 237, 211);
+  background: linear-gradient(
+    2deg,
+    rgba(252, 237, 211, 1) 0%,
+    rgba(253, 246, 233, 1) 25%,
+    rgba(250, 250, 250, 1) 100%
+  );
+  height: 90vh;
+  display: flex;
+}
+
+.loginbox {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-primary);
+
+  p {
+    background-color: var(--color-primary);
+    padding: 1rem;
+    color: white;
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+}
+
+.loginbox h1 {
+  float: left;
+  font-size: 40px;
+  border-bottom: 6px solid var(--color-primary);
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+
+.textbox {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.textbox input {
+  border: none;
+  outline: none;
+  background: none;
+  color: var(--color-text);
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+
+.btn {
+  width: 70%;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  cursor: pointer;
+  color: var(--color-primary);
+  background-color: transparent;
+  padding: 1.5rem 3rem;
+  border: solid 2px var(--color-primary);
+  font-weight: 700;
+  font-size: 1rem;
+  transition-duration: 500ms;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &:hover:enabled {
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+}

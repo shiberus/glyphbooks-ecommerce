@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 6rem;
+  margin-left: 40rem;
+}
+
+.users {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--color-primary);
+  color: #fafafa;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tr:nth-child(even) {
+  background-color: #dbdbdb93;
+}
+
+.tr:hover {
+  background-color: rgb(194, 194, 194);
+}
+
+.td:nth-child(4) {
+  text-align: center;
+}
+
+.td:nth-child(5) {
+  text-align: center;
+}

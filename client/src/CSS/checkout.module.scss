@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textbox {
+  width: 20rem;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.textbox input {
+  border: none;
+  padding-top: 1rem;
+  outline: none;
+  background: none;
+  color: var(--color-text);
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+
+.btn {
+  width: 7rem;
+  text-transform: uppercase;
+  margin: 2rem;
+  cursor: pointer;
+  color: var(--color-primary);
+  background-color: transparent;
+  padding: 1.5rem 3rem;
+  border: solid 2px var(--color-primary);
+  font-weight: 700;
+  font-size: 1rem;
+  transition-duration: 500ms;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &:hover:enabled {
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+}

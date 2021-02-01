@@ -1,0 +1,13 @@
+.container {
+  background: rgb(252, 237, 211);
+  background: linear-gradient(
+    2deg,
+    rgba(252, 237, 211, 1) 0%,
+    rgba(253, 246, 233, 1) 25%,
+    rgba(250, 250, 250, 1) 100%
+  );
+  min-height: 85vh;
+  display: flex;
+  position: relative;
+  margin-top: 5rem;
+}

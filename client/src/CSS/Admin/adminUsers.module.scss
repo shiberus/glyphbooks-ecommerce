@@ -1,0 +1,89 @@
+.size {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+  margin-left: 75%;
+}
+
+.users {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.th {
+  background-color: orange;
+  color: white;
+  min-width: auto;
+  text-align: -webkit-center;
+  border: 1px solid #ddd;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  ion-icon {
+    margin: 0.2rem;
+    padding: 0.2rem;
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    transition-duration: 500ms;
+    &:hover {
+      background-color: #fafafa40;
+    }
+  }
+}
+
+.td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  ion-icon {
+    background-color: transparent;
+    cursor: pointer;
+    padding-bottom: 0.5rem;
+    transition-duration: 500ms;
+    &:hover {
+      background-color: #fafafa40;
+    }
+  }
+}
+
+.tr:nth-child(even) {
+  background-color: #dbdbdb93;
+}
+
+.tr:hover {
+  background-color: rgb(194, 194, 194);
+}
+
+.td:nth-child(1) {
+  text-align: center;
+}
+
+.td:nth-child(4) {
+  text-align: center;
+}
+
+.td:nth-child(5) {
+  text-align: center;
+}
+
+.td:nth-child(6) {
+  text-align: center;
+}
+
+.Btn {
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+  cursor: pointer;
+  color: var(--color-primary);
+  background-color: #fafafa;
+  padding: 0.5rem 1rem;
+  border: solid 2px var(--color-primary);
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0.3rem;
+  transition-duration: 500ms;
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+}

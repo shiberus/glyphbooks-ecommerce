@@ -1,0 +1,47 @@
+.container {
+  color: var(--color-text);
+  align-content: center;
+  border: solid 0.5px;
+  border-color: var(--color-primary);
+  margin-top: 0.5rem;
+  width: 30rem;
+}
+
+.title {
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+  padding: 0.3rem !important;
+  margin: 0.5rem !important;
+  color: var(--color-text);
+  align-content: center;
+}
+
+.date {
+  align-content: center;
+  font-size: 0.8rem;
+  font-weight: 300 !important;
+  padding-left: 0.5rem;
+  color: gray;
+}
+
+.user {
+  color: var(--color-text);
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  align-content: center;
+}
+
+.rating {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  color: var(--color-text);
+}
+
+.description {
+  padding: 1rem;
+  align-content: center;
+  color: var(--color-text);
+  font-size: 1rem !important;
+  font-weight: 300 !important;
+}
